@@ -14,3 +14,4 @@ function getTextValueById(id) {
 }
 
 
+// <button onclick="myFunction()">Click me</button>
