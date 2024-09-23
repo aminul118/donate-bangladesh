@@ -14,4 +14,21 @@ function getTextValueById(id) {
 }
 
 
-// <button onclick="myFunction()">Click me</button>
+
+// ! Show a section
+
+function showSectionById(id) {
+
+  // * Hide All the section
+
+  document.getElementById('donation-section').classList.add('hidden');
+  document.getElementById('history-added').classList.add('hidden');
+
+
+  // * Show the section with with the provided id as parameter
+  document.getElementById(id).classList.remove('hidden');
+
+}
+
+
+

@@ -31,8 +31,10 @@
 
             <div class="bg-white">
                 <div class="md:py-8 py-3 mx-auto flex gap-2 md:gap-4 justify-center ">
-                    <button class="bg-green-300 py-3 px-5  rounded-lg font-bold text-xl w-36 md:w-40">Donation</button>
-                    <button class="px-6 border-2 py-3 rounded-lg font-bold text-xl w-36 md:w-40">History</button>
+                    <button id="donataion-btn"
+                        class="bg-green-300 py-3 px-5  rounded-lg font-bold text-xl w-36 md:w-40">Donation</button>
+                    <button id="history-btn"
+                        class="px-6 border-2 py-3 rounded-lg font-bold text-xl w-36 md:w-40">History</button>
                 </div>
             </div>
         </nav>
@@ -42,7 +44,7 @@
     <main class="max-w-7xl mx-auto px-4 lg:px-32 mb-32">
 
         <!-- ! Donation  Start-->
-        <section>
+        <section id="donation-section">
             <!-- ! Noakhali -->
 
             <div class="grid md:grid-cols-2 md:mt-4 gap-4 border p-4 rounded-lg">
@@ -63,7 +65,7 @@
                     <input id="noakhali-input-field" class="py-3 px-6 border w-full rounded-lg" type="text"
                         placeholder="Write Donation Amount">
                     <button id="noakhali-donate-btn" ;
-                        class="bg-green-300 py-3 px-6  rounded-lg font-bold text-xl w-full hover:bg-slate-500 hover:text-white">Donate</button>
+                        class="bg-green-300 py-3 px-6  rounded-lg font-bold text-xl w-full ">Donate</button>
                 </div>
             </div>
 
@@ -123,28 +125,21 @@
         <!-- !Donation Section End -->
 
         <!-- ! History Section Start -->
-        <section>
-
-
+        <section id="history-added" class="mt-24 container mx-auto lg:px-32 hidden ">
         </section>
         <!-- ! History Section End -->
-
-        <!-- Modal Btn -->
 
 
 
         <!--! Modal Text -->
-
-        <!-- Open the modal using ID.showModal() method -->
-        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
         <div>
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
                 <div class="modal-box text-center ">
                     <h3 class="text-lg font-bold">Congratulations! </h3>
                     <div class="flex justify-center py-2"><img src="./assets/coin.png" alt=""></div>
-                    
-                    <div id="modal-container">
 
+                    <!--? Modal Container -->
+                    <div id="modal-container">
 
                     </div>
 

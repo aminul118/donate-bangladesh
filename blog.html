@@ -60,52 +60,66 @@
             <!-- Navbar End -->
     </header>
 
-    <main class="mt-24 max-w-7xl mx-auto space-y-4 textce">
+    <main class="md:mt-24 max-w-7xl mx-auto space-y-4 textce px-4 py-8" >
+        <h1 class="text-center text-2xl font-bold">FAQ Section</h1>
 
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is DOM?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
+                    so that programs
+                    can change the document structure, style, and content.</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">How can I change the content of an HTML element using the
+                DOM?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <p>You can change the content of an HTML element using the innerHTML, innerText, or textContent
+                    properties.</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is the difference between innerHTML and textContent?
+            </div>
             <div class="collapse-content">
-                <p>hello</p>
+                <p>innerHTML: Retrieves or sets the HTML content of an element, including tags. It can be used to
+                    manipulate both text and HTML elements. </p>
+                <p>textContent: Retrieves or sets the text content of an element, without any HTML tags. It will only
+                    affect text, ignoring
+                    any inner HTML elements.</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the DOM?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent
+                    element to handle
+                    events from its child elements. Instead of adding event listeners to each individual child, you add
+                    one listener to the
+                    parent and let it process events triggered by its children. This improves performance, especially
+                    when handling a large
+                    number of elements, and is useful for dynamically created elements.</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">How does DOM traversal work in JavaScript?</div>
             <div class="collapse-content">
-                <p>hello</p>
+                <p>DOM traversal refers to the process of navigating through the DOM tree to access elements or nodes.
+                    Using properties
+                    like parentNode, childNodes, firstChild, lastChild, nextSibling, and previousSibling, JavaScript
+                    allows you to move
+                    through and manipulate the hierarchy of elements. This is particularly useful when you need to
+                    select elements relative
+                    to others without relying on IDs or classes.</p>
             </div>
         </div>
-
-
     </main>
-
-
-
-
-
-
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 //! Donate for Flood at Noakhali, Bangladesh
+
 document.getElementById('noakhali-donate-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -20,8 +21,14 @@ document.getElementById('noakhali-donate-btn')
 
 
             const p = document.createElement('p');
-            p.innerText = `You Donate ${donationAmount} BDT for Flood at Noakhali, Bangladesh`
+            p.innerText = `You Donated ${donationAmount} BDT for Flood at Noakhali, Bangladesh`
             document.getElementById('modal-container').appendChild(p);
+
+            const div = document.createElement('div');
+            div.innerHTML = `<div class="border p-8 w-full mb-3 rounded-lg"><h1 class="font-semibold text-xl ">${donationAmount} Taka is Donated for Flood at Noakhali, Bangladesh</h1>
+            <p> Date: ${new Date()}</p></div>                      
+            `
+            document.getElementById('history-added').appendChild(div);
 
         }
         else {
@@ -31,6 +38,7 @@ document.getElementById('noakhali-donate-btn')
     })
 
 //! Donate for Flood Relief in Feni,Bangladesh
+
 document.getElementById('feni-donate-btn')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -51,8 +59,14 @@ document.getElementById('feni-donate-btn')
             document.getElementById('my_modal_5').showModal();
 
             const p = document.createElement('p');
-            p.innerText = `You Donate ${donationAmount} BDT for Flood Relief in Feni,Bangladesh`
+            p.innerText = `You Donated ${donationAmount} BDT for Flood Relief in Feni,Bangladesh`
             document.getElementById('modal-container').appendChild(p);
+
+            const div = document.createElement('div');
+            div.innerHTML = `<div class="border p-8 w-full mb-3 rounded-lg"><h1 class="font-semibold text-xl ">${donationAmount} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+            <p> Date: ${new Date()}</p></div>                      
+            `
+            document.getElementById('history-added').appendChild(div);
 
 
         }
@@ -84,8 +98,14 @@ document.getElementById('quota-input-btn')
             document.getElementById('my_modal_5').showModal();
 
             const p = document.createElement('p');
-            p.innerText = `You Donate ${donationAmount} BDT for Injured in the Quota Movement`
+            p.innerText = `You Donated ${donationAmount} BDT for Injured in the Quota Movement`
             document.getElementById('modal-container').appendChild(p);
+
+            const div = document.createElement('div');
+            div.innerHTML = `<div class="border p-8 w-full mb-3 rounded-lg"><h1 class="font-semibold text-xl ">${donationAmount} Taka is Donated for Injured in the Quota Movement</h1>
+            <p> Date: ${new Date()}</p></div>                      
+            `
+            document.getElementById('history-added').appendChild(div);
 
         }
         else {
@@ -93,14 +113,15 @@ document.getElementById('quota-input-btn')
 
         }
     })
-    
-    // Modal Message Reset
+
+//! Modal Message Reset
+
 document.getElementById('close-modal-btn').addEventListener('click', function () {
     const modal = document.getElementById('my_modal_5');
     modal.close();
 
     setTimeout(function () {
         const modalMessage = document.getElementById('modal-container');
-        modalMessage.innerText = '';  
-    }, ); 
+        modalMessage.innerText = '';
+    },);
 });
