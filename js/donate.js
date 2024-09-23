@@ -42,9 +42,11 @@ document.getElementById('feni-donate-btn')
         if (donationAmount > 0 && isNaN(donationAmount) == !true) {
             document.getElementById('feni-donation-amount').innerText = feniTotalDonation;
             document.getElementById('main-donation-balance').innerText = balanceRemaining;
+          
 
         }
         else {
             alert('Invalid Input')
+           
         }
     })
