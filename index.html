@@ -85,15 +85,12 @@
                             src="./assets/coin.png" alt=""> <span id="noakhali-donation-amount">0</span> BDT </button>
                     <h3 class="font-semibold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
                     <p>The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                        donation will help provide
-                        essential supplies and to those affected by this disaster. Every contribution, big or small,
-                        makes difference. Please
-                        join us in supporting the relief efforts and making a positive impact on the lives of those
-                        in
-                        need.</p>
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.</p>
                     <input id="noakhali-input-field" class="py-3 px-6 border w-full rounded-lg" type="text"
                         placeholder="Write Donation Amount">
-                    <button id="noakhali-donate-btn" onclick="my_modal_5.showModal()" ;
+                    <button id="noakhali-donate-btn" ;
                         class="bg-green-300 py-3 px-6  rounded-lg font-bold text-xl w-full hover:bg-slate-500 hover:text-white">Donate</button>
                 </div>
             </div>
@@ -134,7 +131,7 @@
                 <div class="space-y-4">
                     <button
                         class="text-slate-500 flex justify-center items-center gap-3 font-semibold bg-slate-200 py-2 px-6 rounded-lg"><img
-                            src="./assets/coin.png" alt=""> <span>2400</span> BDT </button>
+                            src="./assets/coin.png" alt=""> <span id="quota-donation-amount">2400</span> BDT </button>
                     <h3 class="font-semibold text-xl">Aid for Injured in the Quota Movement</h3>
                     <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many
                         individuals. Your support is crucial in providing medical assistance, rehabilitation, and
@@ -153,35 +150,40 @@
         </section>
         <!-- !Donation Section End -->
 
-        <--! History Section -->
-            <section>
+        <!-- ! History Section Start -->
+        <section>
 
 
-            </section>
-            <!-- ! History Section End -->
+        </section>
+        <!-- ! History Section End -->
 
-            <!-- Modal Btn -->
+        <!-- Modal Btn -->
 
 
 
-            <!--! Modal Text -->
+        <!--! Modal Text -->
 
-            <!-- Open the modal using ID.showModal() method -->
-            <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-            <div>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
-                    <div class="modal-box text-center ">
-                        <h3 class="text-lg font-bold">Congratulations! </h3>
-                        <p class="py-4">Press ESC key or click the button below to close</p>
-                        <div class="modal-action flex justify-center">
-                            <form method="dialog">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn ">Close</button>
-                            </form>
-                        </div>
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <div>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+                <div class="modal-box text-center ">
+                    <h3 class="text-lg font-bold">Congratulations! </h3>
+                   <div id="modal-container">
+
+
+                   </div>
+
+
+                    <div class="modal-action flex justify-center">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button id="close-modal-btn" class="btn ">Close</button>
+                        </form>
                     </div>
-                </dialog>
-            </div>
+                </div>
+            </dialog>
+        </div>
 
 
     </main>
