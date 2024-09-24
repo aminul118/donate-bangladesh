@@ -1,8 +1,8 @@
 //! Donate for Flood at Noakhali, Bangladesh
 
 document.getElementById('noakhali-donate-btn')
-    .addEventListener('click', function (event) {
-        event.preventDefault();
+    .addEventListener('click', function () {
+
         const mainDonationBalance = getTextValueById('main-donation-balance');
         const donationAmount = getInputValueById('noakhali-input-field');
         const balanceRemaining = mainDonationBalance - donationAmount;  //Going to top right bar
@@ -29,6 +29,7 @@ document.getElementById('noakhali-donate-btn')
             <p> Date: ${new Date()}</p></div>                      
             `
             document.getElementById('history-added').appendChild(div);
+            document.getElementById('noakhali-input-field').value = '';
 
         }
         else {
@@ -40,8 +41,7 @@ document.getElementById('noakhali-donate-btn')
 //! Donate for Flood Relief in Feni,Bangladesh
 
 document.getElementById('feni-donate-btn')
-    .addEventListener('click', function (event) {
-        event.preventDefault();
+    .addEventListener('click', function () {
         const mainDonationBalance = getTextValueById('main-donation-balance');
         const donationAmount = getInputValueById('feni-input-field');
         const balanceRemaining = mainDonationBalance - donationAmount;  //Going to top right bar
@@ -67,6 +67,7 @@ document.getElementById('feni-donate-btn')
             <p> Date: ${new Date()}</p></div>                      
             `
             document.getElementById('history-added').appendChild(div);
+            document.getElementById('feni-input-field').value = '';
 
 
         }
@@ -79,8 +80,7 @@ document.getElementById('feni-donate-btn')
 //! Donate for Injured in the Quota Movement
 
 document.getElementById('quota-input-btn')
-    .addEventListener('click', function (event) {
-        event.preventDefault();
+    .addEventListener('click', function () {
         const mainDonationBalance = getTextValueById('main-donation-balance');
         const donationAmount = getInputValueById('quota-input-field');
         const balanceRemaining = mainDonationBalance - donationAmount;  //Going to top right bar
@@ -106,6 +106,7 @@ document.getElementById('quota-input-btn')
             <p> Date: ${new Date()}</p></div>                      
             `
             document.getElementById('history-added').appendChild(div);
+            document.getElementById('quota-input-field').value = '';
 
         }
         else {
@@ -115,16 +116,16 @@ document.getElementById('quota-input-btn')
     })
 
 
-    // Btn Bg
-    document.getElementById('history-btn').addEventListener('click',function(){
-        document.getElementById('donataion-btn').classList.remove('bg-green-300');
-        document.getElementById('history-btn').classList.add('bg-green-300');
-    })
-    
-document.getElementById('donataion-btn').addEventListener('click',function(){
-        document.getElementById('history-btn').classList.remove('bg-green-300');
+// Btn Bg
+document.getElementById('history-btn').addEventListener('click', function () {
+    document.getElementById('donataion-btn').classList.remove('bg-green-300');
+    document.getElementById('history-btn').classList.add('bg-green-300');
+})
+
+document.getElementById('donataion-btn').addEventListener('click', function () {
+    document.getElementById('history-btn').classList.remove('bg-green-300');
     document.getElementById('donataion-btn').classList.add('bg-green-300');
-    })
+})
 
 
 //! Modal Message Reset
