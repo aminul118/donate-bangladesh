@@ -114,6 +114,19 @@ document.getElementById('quota-input-btn')
         }
     })
 
+
+    // Btn Bg
+    document.getElementById('history-btn').addEventListener('click',function(){
+        document.getElementById('donataion-btn').classList.remove('bg-green-300');
+        document.getElementById('history-btn').classList.add('bg-green-300');
+    })
+    
+document.getElementById('donataion-btn').addEventListener('click',function(){
+        document.getElementById('history-btn').classList.remove('bg-green-300');
+    document.getElementById('donataion-btn').classList.add('bg-green-300');
+    })
+
+
 //! Modal Message Reset
 
 document.getElementById('close-modal-btn').addEventListener('click', function () {

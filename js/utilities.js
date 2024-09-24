@@ -27,8 +27,10 @@ function showSectionById(id) {
 
   // * Show the section with with the provided id as parameter
   document.getElementById(id).classList.remove('hidden');
+  
 
 }
+
 
 
 

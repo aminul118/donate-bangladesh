@@ -11,11 +11,14 @@ document.getElementById('blog-button')
 document.getElementById('history-btn')
     .addEventListener('click', function () {
         showSectionById('history-added');
+        
     })
 
 document.getElementById('donataion-btn')
     .addEventListener('click', function () {
         showSectionById('donation-section');
+       
+        
     })
 
 
